@@ -1,9 +1,5 @@
 class ApplicationController < ActionController::API
 
-    # def secret
-    #     ENV['SEC']
-    # end 
-
     def generate_token(data)
         JWT.encode(data, 'secret')
     end 
